@@ -1,0 +1,360 @@
+/*----------------FONDO-EN-MOVIMIENTO-------------------*/
+body {
+  margin: 0;
+  height: 100vw;
+  background: linear-gradient(90deg, #000000 25%, #696072 50%, #000000 75%);
+  background-size: 500% 100%;
+  animation: moverfondo 6s linear infinite;
+  color: white;
+
+}
+
+@keyframes moverfondo {
+  0% {
+    background-position: 0% 0%;
+
+  }
+
+  100% {
+    background-position: -500% 0%;
+  }
+}
+
+/*--------------------FIN-DE-FONDO-EN-MOVIMIENTO---------------*/
+
+/*---------EMCABEZADO-DE-MENU-LOGO----------*/
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 30px;
+  background-color: #221d1dd8;
+  gap: 20px;
+
+}
+
+.logo-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.buscador {
+  margin-left: auto;
+}
+
+.buscador input {
+  padding: 10px;
+  width: 200
+}
+
+.buscador button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(204, 178, 31);
+  color: #36350c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buscador button:hover {
+  background-color: #7e6a13;
+}
+
+/*----------------------------FIN-DE-ENCABEZADO-DE-MENU-LOGO---------------------------------*/
+
+
+/*--------------------------CARRUSEL-DE-IMAGENES---------------------*/
+.titulo-carrusel {
+  background-color: #222;
+  padding: 5px;
+  color: #ffdd57;
+  border: 2px solid #9c1818;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.carrusel {
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  background: #1b102d;
+  margin-top: 0px;
+  position: relative;
+}
+
+.imagenes {
+  display: flex;
+  width: max-content;
+  animation: girarcarrusel 20s linear infinite;
+}
+
+.imagenes2 {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@keyframes girarcarrusel {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*----------------------------FIN-DEL-CARRUSEL-IMAGENES-------------------------*/
+
+/*----------------------------------WIKI-ESTILO----------------------------*/
+.wiki-estilo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+  position: relative;
+  background-color: #362309;
+  color: white;
+  border-radius: 30px;
+  border: 4px solid rgb(33, 6, 77);
+}
+
+.imagen-wiki {
+  float: right;
+  width: 250px;
+  margin: 0 0 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-wiki:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*--------------------------------FIN-WIKI-ESTILO--------------------------------*/
+
+/*----------------------------------ZONA-RETRO---------------------------------- */
+.zona-retro {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #c2bca1;
+  border: 4px solid rgb(53, 50, 49);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.zona-retro h2 {
+  background-color: #1b102d;
+  padding: 5px;
+  color: hsl(48, 85%, 43%);
+  border: 5px solid rgb(60, 53, 70);
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.retro-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.retro-juego {
+  width: 200px;
+  background-color: #948462;
+  border: 3px solid rgb(44, 32, 59);
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.retro-juego:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgb(0, 0, 0);
+}
+
+.retro-juego img {
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.retro-juego p {
+  font-size: 16.5px;
+  color: #242323;
+}
+
+/*---------------------------FIN-DE-ZONA-RETRO------------------------------*/
+
+
+/*-----------------------ZONA-DE-PERSONAJES-LEGENDARIOS--------------*/
+.personajes {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #571313;
+  border-radius: 20px;
+  border: 4px solid rgb(73, 67, 52);
+  text-align: center;
+}
+
+.personajes h2 {
+  background-color: #b39a65;
+  padding: 5px;
+  color: hsl(0, 0%, 0%);
+  border: 5px solid rgb(119, 98, 4);
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+
+.grid-personajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta-personaje {
+  width: 180px;
+  background-color: #420d0d;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.tarjeta-personaje:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px #fff700, 0 0 20px #ffa500;
+}
+
+.tarjeta-personaje img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tarjeta-personaje p {
+  margin-top: 8px;
+  font-size: 17.5px;
+  color: #e6e3e0;
+}
+
+/*--------------------FIN-DE-PERSONAJES-LEGENDARIOS----------------------*/
+
+.caja-descripcion-juegos-M_E {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #8a8268;
+  border: 3.5px solid #221b3a;
+  border-radius: 25px;
+  color: #1a1918;
+  font-size: 17.5px;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.caja-descripcion-personajes-L {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #a18c47;
+  border: 3.5px solid rgb(129, 102, 13);
+  border-radius: 25px;
+  color: #1a1809;
+  font-size: 17.5px;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-gamer {
+  background-color: #111;
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 2px solid #333;
+}
+
+.footer-contenido {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+.footer-enlaces {
+  margin: 20px 0;
+}
+
+.footer-enlaces a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-enlaces a:hover {
+  color: #76ff03;
+}
+
+.footer-redes {
+  margin: 20px 0;
+}
+
+.footer-redes a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.footer-redes a:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 15px;
+}

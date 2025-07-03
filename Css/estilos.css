@@ -1,0 +1,152 @@
+
+body{
+    
+    height: 110vh;
+    background-image: url(../videos/video\ de\ fondo\ terraria.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+h1 {
+    width: 16%;
+    padding: 20px;
+    background-color: rgba(0, 255, 213, 0.719);
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.829);
+    cursor: default;
+    height: 25%;
+    background-position: 10px;
+    
+ 
+}
+h1:hover {
+    transform: scale(1.05) rotateZ(-2deg);
+    background-color: rgba(0, 200, 255, 0.95);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+img {
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+img:hover {
+    transform: scale(1.06) rotate(1deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+#contenedor1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#contenedor1 img {
+    width: 420px;
+    height: auto;
+    border-radius: 22%;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#contenedor1 img:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.lado-izquierdo, .lado-derecho {
+    width: 350px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 30px;
+    line-height: 1.5;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+
+#contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* Espacio entre las imágenes */
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    transition: transform 0.4s ease;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    transition: transform 0.4s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card img:hover {
+    transform: rotateY(0deg) scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.enlace-mini {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enlace-mini:hover {
+    background-color: rgba(50, 50, 50, 0.6);
+    transform: scale(1.05);
+}
+
+.boton-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.boton-volver {
+  background-color: #00ffcc;
+  color: #121212;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffccaa;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.boton-volver:hover {
+  background-color: #00e6b8;
+  transform: scale(1.08);
+}

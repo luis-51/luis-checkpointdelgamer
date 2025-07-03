@@ -1,0 +1,170 @@
+/*------------- ESTILOS GENERALES -------------*/
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #1e1e1e, #0d0d0d);
+  color: #e0e0e0;
+}
+
+/*------------- HERO (Portada con logo y botón) -------------*/
+.hero {
+  position: relative;
+  height: 320px;
+  background: url('../Imagenes/horizon/fondo-horizon.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 14, 14, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.logo-hero {
+  width: 110px;
+  animation: flotar 3s ease-in-out infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  color: #ff8243;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.btn-volver {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #ff8243;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.btn-volver:hover {
+  background-color: #ffa35c;
+}
+
+/*------------- CONTENIDO GENERAL -------------*/
+main.contenido {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.seccion {
+  margin-bottom: 60px;
+}
+
+.seccion h2 {
+  color: #ffaa5c;
+  border-left: 6px solid #ffaa5c;
+  padding-left: 14px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/*------------- TARJETA PERSONAJE PRINCIPAL -------------*/
+.tarjeta {
+  display: flex;
+  gap: 25px;
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #000;
+  flex-wrap: wrap;
+}
+
+.tarjeta img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.tarjeta div {
+  flex: 1;
+}
+
+/*------------- ENEMIGOS (ROBOTS) -------------*/
+.grid-expandible {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #202020;
+  padding: 18px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 10px #ff8243;
+}
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  height: 140px;
+  object-fit: cover;
+}
+.card h4 {
+  color: #ffa869;
+  margin: 10px 0 5px;
+}
+
+/*------------- PERSONAJES SECUNDARIOS -------------*/
+.lista {
+  background: #1c1c1c;
+  padding: 20px 25px;
+  border-radius: 10px;
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+/*------------- SECCIÓN EXPANDIBLE -------------*/
+.texto-expandible {
+  background: #292929;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.extra {
+  margin-top: 15px;
+}
+.oculto {
+  display: none;
+}
+
+/*------------- FOOTER -------------*/
+.footer-horizon {
+  background: #111;
+  color: #999;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  border-top: 2px solid #444;
+}

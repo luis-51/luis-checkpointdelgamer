@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #434343, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% { background: linear-gradient(to right, #434343, #000000); }
+  25% { background: linear-gradient(to right, #000000, #3a0ca3); }
+  50% { background: linear-gradient(to right, #3a0ca3, #7209b7); }
+  75% { background: linear-gradient(to right, #7209b7, #434343); }
+  100% { background: linear-gradient(to right, #434343, #000000); }
+}
+
+.img-pet {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+
+.center-img {
+  display: block;
+  width: 450px;
+  max-width: 95%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  transition: transform 0.7s ease;
+}
+
+.center-img:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  color: white;
+  font-size: 1.2em;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin: 30px auto;
+}
+
+.info1 {
+  color: white;
+  font-size: 1em;
+  width: 90%;
+  max-width: 700px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;
+}
+
+.monstruos {
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  color: white;
+}
+
+.monstruos h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.monstruos h3 {
+  font-size: 1.5em;
+  margin: 10px 0 5px 0;
+}
+
+.monstruos p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.contenedor-imagen img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.holograma {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 15%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(0.6) translateY(30%);
+  pointer-events: none;
+  border-radius: 18px;
+}
+
+@keyframes aparecerHolograma {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(30%);
+  }
+  60% {
+    opacity: 0.7;
+    transform: scale(1.05) translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.contenedor-imagen:hover .holograma {
+  animation: aparecerHolograma 0.6s ease-out forwards;
+  filter: drop-shadow(0 0 20px cyan);
+}
