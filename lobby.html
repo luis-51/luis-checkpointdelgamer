@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkpoint del Gamer</title>
+  <link rel="stylesheet" href="../Css/lobby.css">
+
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="logo-contenedor">
+      <img src="../Imagenes/imagenes-lobby/logo-new.jpg" class="logo-img" alt="logo">
+    </div>
+    <nav> 
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </nav>
+    <div class="buscador">
+      <input type="text" id="busqueda" placeholder="Escribe el nombre del juego" />
+      <button onclick="buscarJuego()">Buscar</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="carrusel">
+      <h2 class="titulo-carrusel">los juegos mas populares actualmente</h2>
+      <div class="imagenes">
+        <!-- Primer grupo de imágenes -->
+        <img src="../Imagenes/imagenes-lobby/Among-us.jpeg" class="imagenes2" alt="Juego 1">
+        <img src="../Imagenes/imagenes-lobby/call-of-duty-mobile.jpeg" class="imagenes2" alt="Juego 2">
+        <img src="../Imagenes/imagenes-lobby/Clash-Royale.jpeg" class="imagenes2" alt="Juego 3">
+        <img src="../Imagenes/imagenes-lobby/CUPHEAD-Nintendo-Switch.jpeg" class="imagenes2" alt="Juego 4">
+        <img src="../Imagenes/imagenes-lobby/Dark-Souls.jpeg" class="imagenes2" alt="Juego 5">
+        <img src="../Imagenes/imagenes-lobby/farcry-4.jpeg" class="imagenes2" alt="Juego 6">
+        <img src="../Imagenes/imagenes-lobby/God-of-War.jpg" class="imagenes2" alt="Juego 7">
+        <img src="../Imagenes/imagenes-lobby/Guitar-Hero.jpeg" class="imagenes2" alt="Juego 8">
+        <img src="../Imagenes/imagenes-lobby/It-Takes-Two.jpg" class="imagenes2" alt="juego 9">
+        <img src="../Imagenes/imagenes-lobby/Nintendo-Metroid.jpeg" class="imagenes2" alt="juego 10">
+        <img src="../Imagenes/imagenes-lobby/TitanFall-2.jpeg" class="imagenes2" alt="juego 11">
+        <img src="../Imagenes/imagenes-lobby/War_robots_End_game.jpeg" class="imagenes2" alt="juego 12">
+        <img src="../Imagenes/imagenes-lobby/ztray.jpg" class="imagenes2" alt="juego 13">
+        <img src="../Imagenes/imagenes-lobby/fnaf-1.jpeg" class="imagenes2" alt="juego 14">
+        <img src="../Imagenes/imagenes-lobby/Left-4-Dead-2.jpeg" class="imagenes2" alt="juego 15">
+
+
+        <!--imagenes duplicadas-->
+        <img src="../Imagenes/imagenes-lobby/Among-us.jpeg" class="imagenes2" alt="Juego 1">
+        <img src="../Imagenes/imagenes-lobby/call-of-duty-mobile.jpeg" class="imagenes2" alt="Juego 2">
+        <img src="../Imagenes/imagenes-lobby/Clash-Royale.jpeg" class="imagenes2" alt="Juego 3">
+        <img src="../Imagenes/imagenes-lobby/CUPHEAD-Nintendo-Switch.jpeg" class="imagenes2" alt="Juego 4">
+        <img src="../Imagenes/imagenes-lobby/Dark-Souls.jpeg" class="imagenes2" alt="Juego 5">
+        <img src="../Imagenes/imagenes-lobby/farcry-4.jpeg" class="imagenes2" alt="Juego 6">
+        <img src="../Imagenes/imagenes-lobby/God-of-War.jpg" class="imagenes2" alt="Juego 7">
+        <img src="../Imagenes/imagenes-lobby/Guitar-Hero.jpeg" class="imagenes2" alt="Juego 8">
+        <img src="../Imagenes/imagenes-lobby/It-Takes-Two.jpg" class="imagenes2" alt="juego 9">
+        <img src="../Imagenes/imagenes-lobby/Nintendo-Metroid.jpeg" class="imagenes2" alt="juego 10">
+        <img src="../Imagenes/imagenes-lobby/TitanFall-2.jpeg" class="imagenes2" alt="juego 11">
+        <img src="../Imagenes/imagenes-lobby/War_robots_End_game.jpeg" class="imagenes2" alt="juego 12">
+        <img src="../Imagenes/imagenes-lobby/ztray.jpg" class="imagenes2" alt="juego 13">
+        <img src="../Imagenes/imagenes-lobby/fnaf-1.jpeg" class="imagenes2" alt="juego 14">
+        <img src="../Imagenes/imagenes-lobby/Left-4-Dead-2.jpeg" class="imagenes2" alt="juego 15">
+
+      </div>
+    </div> 
+
+    <section class="zona-retro">
+      <h2>Juegos que marcaron epocas</h2>
+      <div class="retro-grid">
+        <div class="retro-juego" onclick="mostrarDescripcionRetro('mario')">
+          <img src="../Imagenes/imagenes-lobby/mario-bros-1985.jpeg" alt="Mario-Bros-Retro">
+          <p>super Mario Bros (1985)</p>
+        </div>
+        <div class="retro-juego" onclick="mostrarDescripcionRetro('Doom')">
+          <img src="../Imagenes/imagenes-lobby/Doom-1993.jpeg" alt="Doom-Retro">
+          <p>Doom (1993)</p>
+        </div>
+        <div class="retro-juego" onclick="mostrarDescripcionRetro('zelda')" >
+          <img src="../Imagenes/imagenes-lobby/The-Legend-of-Zelda-1986.jpeg" alt="Zelda-Retro">
+          <p>The Legend of Zelda (1986)</p>
+        </div>
+        <div class="retro-juego" onclick="mostrarDescripcionRetro('sonic')">
+          <img src="../Imagenes/imagenes-lobby/Sonic-The-Hedgehog-1991.jpeg" alt="Sonic-Retro">
+          <p>Sonic The Hedgehog (1991)</p>
+        </div>
+      </div>
+    <div id="descripcion-retro" class="caja-descripcion-juegos-M_E "></div>
+
+    </section>
+
+    <section class="personajes">
+      <h2>Personajes legendarios</h2>
+
+      <div class="grid-personajes">
+        <div class="tarjeta-personaje" onclick="mostrarDescripcionPersonaje('kratos')">
+          <img src="../Imagenes/imagenes-lobby/kratos.jpeg" alt="kratos">
+          <p>kratos</p>
+        </div>
+        <div class="tarjeta-personaje" onclick="mostrarDescripcionPersonaje('mario')">
+          <img src="../Imagenes/imagenes-lobby/Mario-Bros.jpeg" alt="mario-bros">
+          <p>mario Bros</p>
+        </div>
+        <div class="tarjeta-personaje" onclick="mostrarDescripcionPersonaje('lara')">
+          <img src="../Imagenes/imagenes-lobby/Lara-croft.jpeg" alt="lara-croft">
+          <p>lara croft</p>
+        </div>
+        <div class="tarjeta-personaje" onclick="mostrarDescripcionPersonaje('link')">
+          <img src="../Imagenes/imagenes-lobby/link.jpeg" alt="link"> 
+          <p>link</p>
+        </div>
+      </div>
+      <div id="descripcion-personaje" class="caja-descripcion-personajes-L"></div>
+    </section>
+
+    <section class="wiki-estilo">
+      <img src="../Imagenes/imagenes-lobby/logo-new.jpg" alt="" class="imagen-wiki">
+      <div>
+        <h2>¿Que somos?</h2>
+        <p> Somos un sitio web dedicado a la clasificacion de los videojuegos
+          de todo tipo sean mobile,pc,consolas portatiles y las no portatiles.
+          calificamos cuales son los mejores bajo la opinion y criterio de los
+          propios jugadores y a su ves damos una reseña de lo que lo vuelve mejor
+          dentro de su categoria aunque aun asi muchos juegos comparten categorias
+          muy similares sino es que las misma tambien a su ves que catalogamos
+          personajes entre epocas y favoritos en sus respectivas catergorias</p>
+      </div>
+    </section>
+  </main>
+  <script src="../java-Script/lobby.js"></script>
+
+  <footer class="footer-gamer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <img src="../Imagenes/imagenes-lobby/logo-new.jpg" alt="Logo Checkpoint Gamer">
+      </div>
+      
+      <div class="footer-enlaces">
+        <a href="index.html">Inicio</a>
+        <a href="novedades.html">Novedades</a>
+        <a href="ranking.html">Ranking</a>
+        <a href="wiki.html">Wiki</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-redes">
+        <a href="https://facebook.com" target="_blank"><img src="../Imagenes/iconos/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="../Imagenes/iconos/twitter.png" alt="Twitter/X"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../Imagenes/iconos/instagram.png" alt="Instagram"></a>
+        <a href="https://youtube.com" target="_blank"><img src="../Imagenes/iconos/youtube.png" alt="YouTube"></a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2025 Checkpoint del Gamer. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
